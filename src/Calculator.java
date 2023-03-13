@@ -1,8 +1,4 @@
-import java.util.Scanner;
-
 public class Calculator {
-    static Scanner SCANNER = new Scanner(System.in);
-
     public static void main(String[] args) {
         double num1 = CalculatorInputUtils.getDouble();
         double num2 = CalculatorInputUtils.getDouble();
@@ -12,7 +8,7 @@ public class Calculator {
     }
 
     public static double calculate(double valueOne, double valueTwo, char operation) {
-        double result = 0;
+        double result;
         switch (operation) {
             case '+':
                 result = Calculation.fold(valueOne, valueTwo, operation);
