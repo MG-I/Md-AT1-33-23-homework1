@@ -1,24 +1,25 @@
 public class Calculation {
-    public static double calculate(double valueOne, double valueTwo, char operation) {
+    public static double divide(double valueOne, double valueTwo, char operation) {
         double result = 0;
-        switch (operation) {
-            case '+':
-                result = valueOne + valueTwo;
-                break;
-            case '-':
-                result = valueOne - valueTwo;
-                break;
-            case '*':
-                result = valueOne * valueTwo;
-                break;
-            case '/':
-                result = valueOne / valueTwo;
-                break;
-            default:
-                System.out.println("Wrong operation, try again.");
-                result = calculate(valueOne, valueTwo, CalculatorInputUtils.getOperation());
-                return result;
-        }
+        result = valueOne / valueTwo;
+        return result;
+    }
+
+    public static double fold(double valueOne, double valueTwo, char operation) {
+        double result = 0;
+        result = valueOne + valueTwo;
+        return result;
+    }
+
+    public static double subtract(double valueOne, double valueTwo, char operation) {
+        double result = 0;
+        result = valueOne - valueTwo;
+        return result;
+    }
+
+    public static double multiplication(double valueOne, double valueTwo, char operation) {
+        double result = 0;
+        result = valueOne + valueTwo;
         return result;
     }
 }
