@@ -19,7 +19,7 @@ public class Calculation {
 
     public static double multiplication(double valueOne, double valueTwo, char operation) {
         double result;
-        result = valueOne + valueTwo;
+        result = valueOne * valueTwo;
         return result;
     }
 }
